@@ -8,7 +8,7 @@ pix_res_x  = 128
 pix_res_y = 64  
 
 # Défini la fréquence de l'écrant oled ainci que les pines qui le relie au rasberry.
-i2c_dev = I2C(0,scl=Pin(9),sda=Pin(8),freq=200000)
+i2c_dev = I2C(0,scl=Pin(13),sda=Pin(12),freq=200000)
 
 # Défini les pines auquel est relié le capteur de distance à ultrasong.
 sensor = HCSR04(trigger_pin=1, echo_pin=0)
